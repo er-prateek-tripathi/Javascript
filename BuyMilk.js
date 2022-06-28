@@ -1,5 +1,5 @@
 function getMilk(money) {
-    var bottles = money/1.5;
+    let bottles = money/1.5;
     console.log("leaveHouse");
     console.log("moveRight");
     console.log("moveRight");
@@ -19,6 +19,11 @@ function getMilk(money) {
     console.log("moveLeft");
     console.log("moveLeft");
     console.log("enterHouse");
+
+    return money%5;
 }
 
-getMilk(5);
+let change = getMilk(5);
+
+console.log(change);
+
